@@ -16,6 +16,9 @@ public class MyDotComBust {
 	/** This method will setup the game by creating
 	 * three dot com objects and place them randomly on the
 	 * grid*/
+		System.out.println("Your goal is to sink three dot coms.");
+		System.out.println("Pets.com, GoDaddy.com, Wiki.com");
+		System.out.println("Try to sink them all in the fewest number of guesses.");
 		
 		for (int i = 0; i < 3; i++) { //create 3 dot objects and set a random location for each
 			theDotList.add(new MyDot());
@@ -73,6 +76,7 @@ public class MyDotComBust {
 	
 	public void finishGame() {
 	/** This method will print out message about how well the player did*/	
+		System.out.println();
 		System.out.println("Number of guesses " + numOfGuesses);
 	}
 	
