@@ -54,10 +54,15 @@ public class TestMyDotComBust {
 		
 		System.out.println("Test 3: Test out MyHelper to see if it can generate random grid locations");
 		MyGameHelper aHelper = new MyGameHelper();
-		for (int i = 0; i < 10; i++) { //should generate several different locations
+		System.out.println(aHelper.usedLocations.toString());
+		
+		//should generate several different locations
+		//note the game board is only 7 x 7 and each random location
+		// is 3 cells, so technically MAX is 16, if try to create too many
+		// this will fail, it will be stuck in while loop trying to create more
+		for (int i = 0; i < 10; i++) { 
 			System.out.println(aHelper.makeLocation());
 		}
-		
-		
+		System.out.println(aHelper.usedLocations.toString());
 	}
 }
